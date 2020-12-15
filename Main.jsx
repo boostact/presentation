@@ -1,16 +1,24 @@
 import { Boostact } from "boostact";
+import Router from "./router";
+import Timer from "./component/timer";
 /** @jsx Boostact.createElement */
+
+const Context = Boostact.createContext();
+
 const Main = () => {
   const [pageNumber, setPage] = Boostact.useState(0);
+
+  const [work, setWork] = Boostact.useState(false);
+
   return (
-    <div>
+    <Context.Provider value={{ work, setWork }}>
       <div>
         <Timer />
       </div>
       <div>
         <Router pageNumber={pageNumber} />
       </div>
-    </div>
+    </Context.Provider>
   );
 };
-export default Main;
+export { Main, Context };
