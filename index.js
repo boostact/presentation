@@ -1,6 +1,6 @@
 import { Boostact } from "boostact";
-import App from "./App";
+import Main from "./Main";
 /** @jsx Boostact.createElement */
 
 const root = document.getElementById("root");
-Boostact.render(<App />, root);
+Boostact.render(<Main />, root);
