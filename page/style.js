@@ -6,13 +6,12 @@ jss.setup(preset());
 const style = {
   button: {
     position: "fixed",
-    height: "324px",
-    width: "324px",
-    right: "calc(50% - 162px)",
-    top: "calc(50% - 162px)",
+    height: "216px",
+    width: "216px",
+    right: "calc(50% - 108px)",
+    top: "calc(50% - 108px)",
     "&:hover": {
       cursor: "pointer",
-      background: "black",
     },
   },
 };

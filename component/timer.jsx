@@ -33,13 +33,14 @@ const reducer = (state, action) => {
 };
 
 let prevTimer = new Date().getSeconds();
+let interval;
+let clock = false;
 
 const Timer = () => {
   const [state, dispatch] = Boostact.useReducer(reducer, initialValue);
-  const { states } = Boostact.useContext(Context);
+  const { states, actions } = Boostact.useContext(Context);
 
   Boostact.useEffect(() => {
-    let interval;
     if (states.work) {
       interval = setInterval(() => {
         const timer = new Date().getSeconds();
@@ -48,14 +49,26 @@ const Timer = () => {
         }
         prevTimer = timer;
       }, 500);
+      actions.setWork(false);
     }
     return (interval) => {
-      clearImmediate(interval);
+      clearInterval(interval);
     };
   }, [state.seconds, states.work, new Date().getSeconds()]);
 
+  const stopClick = () => {
+    if (!clock) {
+      clearInterval(interval);
+      actions.setWork(false);
+      clock = true;
+      return;
+    }
+    actions.setWork(true);
+    clock = false;
+  };
+
   return (
-    <div className={classes.timer}>
+    <div onclick={stopClick} className={classes.timer}>
       <div className={classes.timeBox}>{numPad(0)}</div>
       <div>:</div>
       <div className={classes.timeBox}>{numPad(state.minutes)}</div>

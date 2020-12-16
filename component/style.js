@@ -19,6 +19,10 @@ const style = {
     background: "linear-gradient( to right, #CBD9E8, #FFFFFF )",
     fontWeight: "600",
     zIndex: 9999,
+    "&:hover": {
+      cursor: "pointer",
+      background: "linear-gradient( to right, #638dba, #FFFFFF )",
+    },
   },
   timeBox: {
     textAlign: "center",
