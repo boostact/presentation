@@ -22,11 +22,25 @@ const style = {
   },
   leftButton: {
     position: "fixed",
+    height: "100vh",
+    top: "100px",
+    left: "0px",
+    opacity: "0.0",
     zIndex: 2,
+    "&:hover": {
+      cursor: "pointer",
+    },
   },
   rightButton: {
     position: "fixed",
+    height: "100vh",
+    top: "100px",
+    right: "0px",
+    opacity: "0.0",
     zIndex: 2,
+    "&:hover": {
+      cursor: "pointer",
+    },
   },
 };
 

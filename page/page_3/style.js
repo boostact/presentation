@@ -1,10 +1,10 @@
-import jss from "jss";
-import preset from "jss-preset-default";
+import jss from 'jss';
+import preset from 'jss-preset-default';
 
 jss.setup(preset());
 
 const style = {
-    radious : `
+  radious: `
         width:300px;
         height:300px;
         line-height: 20px;
@@ -14,24 +14,24 @@ const style = {
         border-radius: 50%;
         color: white;
     `,
-    radiousText:`
+  radiousText: `
         margin-top:45%;
         font-size:35px;
     `,
-    radiousContainer : `
+  radiousContainer: `
         margin-top:240px;
         display:flex;
         justify-content: space-around;
     `,
-    red:`
+  red: `
         background:red;
     `,
-    blue:`
+  blue: `
         background:blue;
     `,
-    green:`
+  green: `
         background:green;
-    `
+    `,
 };
 
 const { classes } = jss.createStyleSheet(style).attach();
