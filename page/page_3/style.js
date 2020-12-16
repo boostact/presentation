@@ -18,9 +18,13 @@ const style = {
         bottom: "0px",
     },
     framework: {
-        position: "absoulte",
-        color: "white",
-        top: "50%",
+        position: "absolute",
+        fontSize: "250px",
+        color: "#61dafb",
+        top: "calc(50% - 125px)",
+        marginLeft: "17.5%",
+        zIndex: "4",
+        fontWeight: "900",
     },
 };
 
