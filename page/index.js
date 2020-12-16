@@ -3,7 +3,7 @@ import Page_1 from "./Page_1";
 import Page_2 from "./Page_2";
 import Page_3 from "./page_3/Page_3";
 import Page_4 from "./Page_4";
-import Page_5 from "./Page_5";
+import Page_5 from "./page_5/Page_5";
 import Page_6 from "./Page_6";
 import Page_7 from "./Page_7";
 import Page_8 from "./Page_8";

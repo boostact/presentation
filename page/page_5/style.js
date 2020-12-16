@@ -5,8 +5,8 @@ jss.setup(preset());
 
 const style = {
     radious : `
-        width:300px;
-        height:300px;
+        width:350px;
+        height:350px;
         line-height: 20px;
         text-align:center;
         vertical-align:middle;
@@ -19,7 +19,7 @@ const style = {
         font-size:35px;
     `,
     radiousContainer : `
-        margin-top:240px;
+        margin-top:250px;
         display:flex;
         justify-content: space-around;
     `,
