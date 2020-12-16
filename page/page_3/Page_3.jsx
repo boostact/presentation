@@ -1,6 +1,6 @@
 import { Boostact } from "boostact";
-import classes from "./style";
-import commonClasses from "../common/style";
+import classes from "./page_3/style";
+import commonClasses from "./common/style";
 /**@jsx Boostact.createElement */
 
 const Page = () => {
