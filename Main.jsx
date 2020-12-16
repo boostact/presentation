@@ -6,19 +6,19 @@ import Timer from "./component/timer";
 const Context = Boostact.createContext();
 
 const Main = () => {
-  const [pageNumber, setPage] = Boostact.useState(0);
+    const [pageNumber, setPage] = Boostact.useState(0);
 
-  const [work, setWork] = Boostact.useState(false);
+    const [work, setWork] = Boostact.useState(false);
 
-  return (
-    <Context.Provider value={{ work, setWork }}>
-      <div>
-        <Timer />
-      </div>
-      <div>
-        <Router pageNumber={pageNumber} />
-      </div>
-    </Context.Provider>
-  );
+    return (
+        <Context.Provider value={{ work, setWork }}>
+            <div style={{ fontFamily: "nanumsquare" }}>
+                <Timer />
+            </div>
+            <div>
+                <Router pageNumber={pageNumber} />
+            </div>
+        </Context.Provider>
+    );
 };
 export { Main, Context };
