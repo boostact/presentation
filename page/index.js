@@ -6,7 +6,7 @@ import Page_4 from "./page_4/Page_4";
 import Page_5 from "./page_5/Page_5";
 import Page_6 from "./page_6/Page_6";
 import Page_7 from "./page_7/Page_7";
-import Page_8 from "./Page_8";
+import Page_8 from "./page_8/Page_8";
 import Page_9 from "./Page_9";
 import Page_10 from "./Page_10";
 import Page_11 from "./Page_11";
