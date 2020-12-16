@@ -12,17 +12,18 @@ const Router = ({ pageNumber }) => {
     .map((val, index) => {
       const path = "/page_" + (index + 1);
       return (
-        <Route.Route
+        <Route
+          exact
           path={path}
           component={pageList[index]}
           isContained
-        ></Route.Route>
+        ></Route>
       );
     });
 
   return (
     <div>
-      <Route.Route path="/" component={startPage}></Route.Route>
+      <Route exact path="/" component={startPage}></Route>
       {routerList}
     </div>
   );

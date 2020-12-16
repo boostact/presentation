@@ -1,18 +1,23 @@
-import { Boostact } from "boostact";
+import { Boostact, Link } from "boostact";
 import { Context } from "../Main";
 /**@jsx Boostact.createElement */
 
 const Page = () => {
-    const { work, setWork } = Boostact.useContext(Context);
-    const timerStart = () => {
-        setWork(true);
-    };
+  const { actions } = Boostact.useContext(Context);
 
-    return (
-        <div onClick={timerStart}>
-            <h1>startPage</h1>
+  const timerStart = () => {
+    actions.setWork(true);
+  };
+
+  return (
+    <div>
+      <Link to={"/page_1"}>
+        <div>
+          <h1 onClick={timerStart}>startPage</h1>
         </div>
-    );
+      </Link>
+    </div>
+  );
 };
 
 export default Page;
