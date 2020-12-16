@@ -16,10 +16,12 @@ const style = {
     rightSide: {
         width: "50%",
         minHeight: "100%",
+        border: "1px solid red",
     },
     image: {
-        width: "100%",
-        maxHeight: "100%",
+        maxWidth: "90%",
+        minWidth: "calc(100% + 40px)",
+        maxHeight: "calc(100% + 40px)",
     },
     chatImgBox: {
         marginTop: "150px",

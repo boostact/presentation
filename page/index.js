@@ -1,6 +1,6 @@
 import startPage from "./StartPage";
 import Page_1 from "./Page_1";
-import Page_2 from "./Page_2";
+import Page_2 from "./page_2/Page_2";
 import Page_3 from "./page_3/Page_3";
 import Page_4 from "./Page_4";
 import Page_5 from "./Page_5";

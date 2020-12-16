@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html style="max-height: 100vh">
-  <body style="margin: 0px; height: 100%; background-color: #41404a">
-    <div id="root" style="height: 100%"></div>
-  </body>
+    <body
+        style="
+            margin: 0px;
+            height: 100%;
+            background-color: #41404a;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        "
+    >
+        <div id="root" style="height: 100%; width: 100%"></div>
+    </body>
+    <script>
+        const getBrowserSize = () => {
+            let div = document.createElement("div");
+            div.style.position = "absolute";
+            div.style.top = 0;
+            div.style.left = 0;
+            div.style.width = "100%";
+            div.style.height = "100%";
+            document.documentElement.appendChild(div);
+            const results = {
+                width: div.offsetWidth,
+                height: div.offsetHeight,
+            };
+            div.parentNode.removeChild(div);
+            return results;
+        };
+
+        const { width, height } = getBrowserSize();
+        document.getElementById("root").style.minWidth = width + "px";
+        document.getElementById("root").style.minHeight = height + "px";
+    </script>
 </html>
