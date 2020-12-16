@@ -47,18 +47,22 @@ const ControllButton = () => {
   };
 
   return (
-    <div className={classes.leftButton}>
-      <div className={classes.leftButton}>
+    <div>
+      <div>
         <Link to={prevLink}>
           <div>
-            <button onClick={down}>◄</button>
+            <button className={classes.leftButton} onClick={down}>
+              ◄
+            </button>
           </div>
         </Link>
       </div>
-      <div className={classes.rightButton}>
+      <div>
         <Link to={frontLink}>
           <div>
-            <button onClick={up}>►</button>
+            <button className={classes.rightButton} onClick={up}>
+              ►
+            </button>
           </div>
         </Link>
       </div>
