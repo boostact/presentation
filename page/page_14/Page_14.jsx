@@ -8,7 +8,7 @@ const Page = () => {
   return (
     <div>
       <div className={commonClasses.titleBox}>
-        <span className={commonClasses.titleNumber}>07</span>
+        <span className={commonClasses.titleNumber}>09</span>
         <span className={commonClasses.title}>Q & A</span>
       </div>
       <div>
