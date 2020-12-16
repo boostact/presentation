@@ -19,7 +19,7 @@
     "homepage": "https://github.com/boostact/presentation#readme",
     "dependencies": {
         "babel-loader": "^8.1.0",
-        "boostact": "^1.3.3",
+        "boostact": "^1.3.4",
         "jss": "^10.5.0",
         "jss-preset-default": "^10.5.0",
         "save-dev": "0.0.1-security",

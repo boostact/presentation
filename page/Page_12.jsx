@@ -5,7 +5,7 @@ import { Boostact } from "boostact";
 const Page = () => {
   return (
     <div>
-      <h1>page1</h1>
+      <h1>page12</h1>
     </div>
   );
 };
