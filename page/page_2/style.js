@@ -16,7 +16,6 @@ const style = {
     rightSide: {
         width: "50%",
         minHeight: "100%",
-        border: "1px solid red",
     },
     image: {
         maxWidth: "90%",
