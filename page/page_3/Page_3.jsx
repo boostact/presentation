@@ -1,35 +1,26 @@
 import { Boostact } from "boostact";
 import classes from "./style";
 import commonClasses from "../common/style";
-
 /**@jsx Boostact.createElement */
 
 const Page = () => {
-  return (
-    <div>
-      <div className={commonClasses.titleBox}>
-        <span className={commonClasses.titleNumber}>03</span>
-        <span className={commonClasses.title}>부스트액트의 조건</span>
-      </div>
-      <div className={classes.radiousContainer}>
-        <div className={`${classes.radious} ${classes.red}`}>
-          <div className={classes.radiousText}>
-            JSX, HOOK
+    return (
+        <div className={classes.page3}>
+            <div>
+                <strong className={commonClasses.titleNumber}>02</strong>
+                <strong className={commonClasses.title}>
+                    왜 부스트액트인가?
+                </strong>
             </div>
+            <div className={classes.imageBox}>
+                <img
+                    className={classes.treeImage}
+                    src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FzD7Ys%2FbtqQss6s0zy%2F2ZHLK3vFgY6va4um3iQzYK%2Fimg.png"
+                ></img>
+            </div>
+            <span className={classes.framework}>framework</span>
         </div>
-        <div className={`${classes.radious} ${classes.blue}`}>
-          <div className={classes.radiousText}>
-          상태관리와 가상돔
-          </div>
-          </div>
-        <div className={`${classes.radious} ${classes.green}`}>
-          <div className={classes.radiousText}>
-          SPA에서의 라우팅
-          </div>
-          </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Page;
