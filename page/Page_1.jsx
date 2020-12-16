@@ -3,11 +3,11 @@ import { Boostact } from "boostact";
 /**@jsx Boostact.createElement */
 
 const Page = () => {
-  return (
-    <div>
-      <h1>page1</h1>
-    </div>
-  );
+    return (
+        <div className={classes.page2}>
+            <div className={classes.leftSide}></div>
+        </div>
+    );
 };
 
 export default Page;
