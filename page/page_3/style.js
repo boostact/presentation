@@ -19,7 +19,7 @@ const style = {
         font-size:35px;
     `,
     radiousContainer : `
-        margin-top:200px;
+        margin-top:240px;
         display:flex;
         justify-content: space-around;
     `,
