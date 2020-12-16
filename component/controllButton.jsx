@@ -42,7 +42,12 @@ const ControllButton = () => {
 
   const up = () => {
     const idx = pageList.indexOf(states.list);
-    actions.setList(pageList[(idx + 1) % listLength]);
+    console.log(idx, listLength);
+    if (idx === listLength - 2) {
+      actions.setList(pageList[idx]);
+    } else {
+      actions.setList(pageList[(idx + 1) % listLength]);
+    }
   };
 
   return (
