@@ -13,7 +13,7 @@ const style = {
         fontSize: "20px",
         padding: "5px",
         textAlign: "center",
-        background: "#CBD9E8",
+        background: "linear-gradient( to right, #CBD9E8, #FFFFFF )",
         fontWeight: "600",
     },
     timeBox: {
