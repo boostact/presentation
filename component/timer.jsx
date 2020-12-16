@@ -59,7 +59,6 @@ const Timer = () => {
   const stopClick = () => {
     if (!clock) {
       clearInterval(interval);
-      actions.setWork(false);
       clock = true;
       return;
     }
