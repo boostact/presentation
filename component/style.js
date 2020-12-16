@@ -18,7 +18,7 @@ const style = {
     textAlign: "center",
     background: "linear-gradient( to right, #CBD9E8, #FFFFFF )",
     fontWeight: "600",
-    zIndex: 3,
+    zIndex: 9999,
   },
   timeBox: {
     textAlign: "center",
@@ -31,7 +31,7 @@ const style = {
     top: "100px",
     left: "0px",
     opacity: "0.0",
-    zIndex: 2,
+    zIndex: 9000,
     "&:hover": {
       cursor: "pointer",
     },
@@ -43,7 +43,7 @@ const style = {
     top: "100px",
     right: "0px",
     opacity: "0.0",
-    zIndex: 2,
+    zIndex: 9000,
     "&:hover": {
       cursor: "pointer",
     },
