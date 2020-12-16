@@ -1,4 +1,5 @@
 import { Boostact, Link } from "boostact";
+import classes from "./style";
 
 import { Context } from "../Main";
 
@@ -46,15 +47,15 @@ const ControllButton = () => {
   };
 
   return (
-    <div>
-      <div>
+    <div className={classes.leftButton}>
+      <div className={classes.leftButton}>
         <Link to={prevLink}>
           <div>
             <button onClick={down}>◄</button>
           </div>
         </Link>
       </div>
-      <div>
+      <div className={classes.rightButton}>
         <Link to={frontLink}>
           <div>
             <button onClick={up}>►</button>
