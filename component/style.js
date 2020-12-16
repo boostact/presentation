@@ -6,7 +6,8 @@ jss.setup(preset());
 const style = {
   timer: {
     position: "fixed",
-    right: "calc(50% - 50px)",
+    right: "30px",
+    top: "10px",
     display: "flex",
     borderRadius: "30px",
     borderBottom: "1px solid gray",
@@ -17,6 +18,7 @@ const style = {
     textAlign: "center",
     background: "linear-gradient( to right, #CBD9E8, #FFFFFF )",
     fontWeight: "600",
+    zIndex: 3,
   },
   timeBox: {
     textAlign: "center",
