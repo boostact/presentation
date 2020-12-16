@@ -5,6 +5,8 @@ jss.setup(preset());
 
 const style = {
   timer: {
+    position: "fixed",
+    right: "50%",
     display: "flex",
     borderRadius: "30px",
     borderBottom: "1px solid gray",
@@ -23,6 +25,7 @@ const style = {
   leftButton: {
     position: "fixed",
     height: "100vh",
+    width: "150px",
     top: "100px",
     left: "0px",
     opacity: "0.0",
@@ -34,6 +37,7 @@ const style = {
   rightButton: {
     position: "fixed",
     height: "100vh",
+    width: "150px",
     top: "100px",
     right: "0px",
     opacity: "0.0",
