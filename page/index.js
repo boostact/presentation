@@ -12,7 +12,7 @@ import Page_10 from "./Page_10";
 import Page_11 from "./Page_11";
 import Page_12 from "./Page_12";
 import Page_13 from "./Page_13";
-import Page_14 from "./Page_14";
+import Page_14 from "./page_14/Page_14";
 
 const pageList = [
     Page_1,
