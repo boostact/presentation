@@ -21,8 +21,7 @@ const reducer = (state, action) => {
     case "SET_SECONDS": {
       if (state.seconds === 0) {
         if (state.minutes === 0) {
-          console.log("done");
-          return;
+          return { seconds: 0, minutes: 8 };
         }
         return { seconds: 59, minutes: state.minutes - 1 };
       }

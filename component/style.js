@@ -6,7 +6,7 @@ jss.setup(preset());
 const style = {
   timer: {
     position: "fixed",
-    right: "50%",
+    right: "calc(50% - 50px)",
     display: "flex",
     borderRadius: "30px",
     borderBottom: "1px solid gray",

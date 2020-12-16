@@ -22,14 +22,12 @@ const Context = Boostact.createContext();
 
 const Main = () => {
   const [states, dispatch] = Boostact.useReducer(reducer, initialValue);
-  console.log(states);
 
   const actions = {
     setWork: (value) => {
       dispatch({ type: "SET_WORK", value });
     },
     setList: (value) => {
-      console.log("vlaue", value);
       dispatch({ type: "SET_LIST", value });
     },
   };
