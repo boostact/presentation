@@ -1,6 +1,5 @@
 import { Boostact } from "boostact";
 import { Main } from "./Main";
-import Page_2 from "./page/Page_2";
 /** @jsx Boostact.createElement */
 
 const loadFonts = async () => {
