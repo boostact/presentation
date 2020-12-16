@@ -27,6 +27,9 @@ const reducer = (state, action) => {
       }
       return { seconds: state.seconds - 1, minutes: state.minutes };
     }
+    case "SET_QNA": {
+      return { seconds: 0, minutes: 8 };
+    }
     default:
       break;
   }
@@ -34,7 +37,8 @@ const reducer = (state, action) => {
 
 let prevTimer = new Date().getSeconds();
 let interval;
-let clock = false;
+let clock = false,
+  QnA = false;
 
 const Timer = () => {
   const [state, dispatch] = Boostact.useReducer(reducer, initialValue);
@@ -50,6 +54,10 @@ const Timer = () => {
         prevTimer = timer;
       }, 500);
       actions.setWork(false);
+    }
+    if (states.list === "page_14" && !QnA) {
+      dispatch({ type: "SET_QNA" });
+      QnA = true;
     }
     return (interval) => {
       clearInterval(interval);
