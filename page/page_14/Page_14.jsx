@@ -80,8 +80,7 @@ const Page = () => {
               src="https://www.flaticon.com/svg/static/icons/svg/2087/2087863.svg"
             />
             <p className={classes.say}>
-              Hey, jingle bells, jingle bells Jingle all the way Oh, what fun it
-              is to ride In a one horse open sleigh
+              배우는게 재미있는 개발자
             </p>
             <img
               className={classes.quotes + " " + classes.rightQuote}
