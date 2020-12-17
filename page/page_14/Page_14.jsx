@@ -24,8 +24,7 @@ const Page = () => {
               src="https://www.flaticon.com/svg/static/icons/svg/2087/2087863.svg"
             />
             <p className={classes.say}>
-              Jingle bells, jingle bells Jingle all the way Oh, what fun it is
-              to ride In a one horse open sleigh
+              JavaScript 생태계에 뛰어들고 싶은 개발자
             </p>
             <img
               className={classes.quotes + " " + classes.rightQuote}
