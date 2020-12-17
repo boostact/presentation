@@ -33,8 +33,8 @@ const Timer = () => {
 
     if (states.minutes === 0) {
       if (states.seconds === 0) {
-        actions.setQnA("page_14");
-        window.router.navigateTo("/page_14");
+        actions.setQnA("page_15");
+        window.router.navigateTo("/page_15");
         return;
       }
       style = classes.timerDeadLine;

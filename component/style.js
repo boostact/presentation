@@ -7,7 +7,7 @@ const style = {
   timer: {
     position: "fixed",
     right: "30px",
-    top: "10px",
+    top: "15px",
     display: "flex",
     borderRadius: "30px",
     borderBottom: "1px solid gray",
