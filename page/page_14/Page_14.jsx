@@ -43,7 +43,7 @@ const Page = () => {
               className={classes.quotes}
               src="https://www.flaticon.com/svg/static/icons/svg/2087/2087863.svg"
             />
-            <p className={classes.say}>만나서 즐거웠고 다음에 또 봅시다.</p>
+            <p className={classes.say}>호기심 많은 개발자</p>
             <img
               className={classes.quotes + " " + classes.rightQuote}
               src="https://www.flaticon.com/svg/static/icons/svg/56/56826.svg"
