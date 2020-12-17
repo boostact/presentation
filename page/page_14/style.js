@@ -39,6 +39,7 @@ const style = {
     marginLeft: "370px",
   },
   say: {
+    textAlign: "center",
     width: "380px",
   },
 };

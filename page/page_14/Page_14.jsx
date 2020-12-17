@@ -23,10 +23,9 @@ const Page = () => {
               className={classes.quotes}
               src="https://www.flaticon.com/svg/static/icons/svg/2087/2087863.svg"
             />
-            <p className={classes.say}>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JavaScript 생태계에 뛰어들고 싶은
-              개발자
-            </p>
+            <div className={classes.say}>
+              JavaScript 생태계에 뛰어들고 싶은 개발자
+            </div>
             <img
               className={classes.quotes + " " + classes.rightQuote}
               src="https://www.flaticon.com/svg/static/icons/svg/56/56826.svg"
@@ -44,10 +43,7 @@ const Page = () => {
               className={classes.quotes}
               src="https://www.flaticon.com/svg/static/icons/svg/2087/2087863.svg"
             />
-            <p className={classes.say}>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;호기심
-              많은 개발자
-            </p>
+            <div className={classes.say}>호기심 많은 개발자</div>
             <img
               className={classes.quotes + " " + classes.rightQuote}
               src="https://www.flaticon.com/svg/static/icons/svg/56/56826.svg"
@@ -65,10 +61,7 @@ const Page = () => {
               className={classes.quotes}
               src="https://www.flaticon.com/svg/static/icons/svg/2087/2087863.svg"
             />
-            <p className={classes.say}>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              흥이 많은 개발자
-            </p>
+            <div className={classes.say}>흥이 많은 개발자</div>
             <img
               className={classes.quotes + " " + classes.rightQuote}
               src="https://www.flaticon.com/svg/static/icons/svg/56/56826.svg"
@@ -86,10 +79,7 @@ const Page = () => {
               className={classes.quotes}
               src="https://www.flaticon.com/svg/static/icons/svg/2087/2087863.svg"
             />
-            <p className={classes.say}>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;배우는게
-              재미있는 개발자
-            </p>
+            <div className={classes.say}>배우는게 재미있는 개발자</div>
             <img
               className={classes.quotes + " " + classes.rightQuote}
               src="https://www.flaticon.com/svg/static/icons/svg/56/56826.svg"
