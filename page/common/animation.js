@@ -62,6 +62,25 @@ const animation = {
       transform: "scale3d(1,1,1)",
     },
   },
+  lightSpeedIn:{
+    "0%":{
+      transform: "translate3d(100%, 0, 0) skewX(-30deg)",
+      opacity: 0,
+    },
+    "60%":{
+      transform: "skewX(20deg)",
+      opacity: 1
+    },
+    "80%" : {
+      transform: "skewX(-5deg)",
+      opacity: 1
+    },
+    "100%" : {
+      transform: "none",
+      opacity: 1
+    }
+  }
+  
 };
 
 // const { animation } = jss.createStyleSheet(style).attach();
