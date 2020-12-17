@@ -25,14 +25,17 @@ const listLength = pageList.length;
 const ControllButton = () => {
   const { states, actions } = Boostact.useContext(Context);
 
-  const index = pageList.indexOf(states.list);
+  let index = pageList.indexOf(states.list);
+  if (index < 0) {
+    index = 0;
+  }
   let prevLink = "/" + pageList[index - 1];
   let frontLink = "/" + pageList[index + 1];
-  if (index <= 0) {
+  if (index < 0) {
     prevLink = "/";
   }
   if (index === pageList.length - 1) {
-    frontLink = "/";
+    frontLink = "/" + pageList[index];
   }
 
   const down = () => {
@@ -42,7 +45,11 @@ const ControllButton = () => {
 
   const up = () => {
     const idx = pageList.indexOf(states.list);
-    actions.setList(pageList[(idx + 1) % listLength]);
+    if (idx === listLength - 2 && !states.QnA) {
+      actions.setQnA(pageList[idx + 1]);
+    } else {
+      actions.setList(pageList[(idx + 1) % listLength]);
+    }
   };
 
   return (
