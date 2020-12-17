@@ -11,6 +11,7 @@ const style = {
     },
 
     areaBox: {
+        borderRadius: "10px",
         width: "100%",
         height: "100%",
     },
@@ -18,7 +19,7 @@ const style = {
     inputBox: {
         background: "white",
         width: "20%",
-        border: "3px solid red",
+        border: "3px solid gray",
         height: "500px",
         borderRadius: "10px",
     },
@@ -27,7 +28,7 @@ const style = {
         background: "white",
         width: "20%",
         marginLeft: "30px",
-        border: "3px solid red",
+        border: "3px solid gray",
         height: "500px",
         borderRadius: "10px",
     },
@@ -35,7 +36,7 @@ const style = {
     codeBox: {
         background: "white",
         width: "20%",
-        border: "3px solid red",
+        border: "3px solid gray",
         height: "500px",
         backgroundColor: "#1E1E1E",
         paddingLeft: "10px",
@@ -48,14 +49,15 @@ const style = {
         background: "white",
         marginRight: "20px",
         color: "white",
-        background: "red",
+        background: "gray",
         borderRadius: "30px",
     },
 
     explaination: {
         width: "20%",
-        border: "3px solid red",
+        border: "3px solid gray",
         height: "500px",
+        borderRadius: "10px",
         color: "white",
         marginLeft: "30px",
     },
