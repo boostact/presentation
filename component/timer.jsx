@@ -4,11 +4,6 @@ import classes from "./style";
 
 /** @jsx Boostact.createElement */
 
-const initialValue = {
-  seconds: 0,
-  minutes: 7,
-};
-
 const numPad = (num) => {
   if (typeof num === "number" && num >= 0 && num < 10) {
     num = "0" + num;
@@ -16,32 +11,12 @@ const numPad = (num) => {
   return num;
 };
 
-const reducer = (state, action) => {
-  switch (action.type) {
-    case "SET_SECONDS": {
-      if (state.seconds === 0) {
-        if (state.minutes === 0) {
-          return { seconds: 0, minutes: 8 };
-        }
-        return { seconds: 59, minutes: state.minutes - 1 };
-      }
-      return { seconds: state.seconds - 1, minutes: state.minutes };
-    }
-    case "SET_QNA": {
-      return { seconds: 0, minutes: 8 };
-    }
-    default:
-      break;
-  }
-};
-
 let prevTimer = new Date().getSeconds();
 let interval;
-let clock = false,
-  QnA = false;
+let clock = false;
+let style = classes.timer;
 
 const Timer = () => {
-  const [state, dispatch] = Boostact.useReducer(reducer, initialValue);
   const { states, actions } = Boostact.useContext(Context);
 
   Boostact.useEffect(() => {
@@ -49,20 +24,27 @@ const Timer = () => {
       interval = setInterval(() => {
         const timer = new Date().getSeconds();
         if (prevTimer !== timer) {
-          dispatch({ type: "SET_SECONDS" });
+          actions.setSeconds();
         }
         prevTimer = timer;
       }, 500);
-      actions.setWork(false);
     }
-    if (states.list === "page_14" && !QnA) {
-      dispatch({ type: "SET_QNA" });
-      QnA = true;
+    actions.setWork(false);
+
+    if (states.minutes === 0) {
+      if (states.seconds === 0) {
+        actions.setQnA("page_14");
+        window.router.navigateTo("/page_14");
+        return;
+      }
+      style = classes.timerDeadLine;
+    } else {
+      style = classes.timer;
     }
     return (interval) => {
       clearInterval(interval);
     };
-  }, [state.seconds, states.work, new Date().getSeconds()]);
+  }, [states.seconds, states.work, new Date().getSeconds()]);
 
   const stopClick = () => {
     if (!clock) {
@@ -75,12 +57,12 @@ const Timer = () => {
   };
 
   return (
-    <div onclick={stopClick} className={classes.timer}>
+    <div onclick={stopClick} className={style}>
       <div className={classes.timeBox}>{numPad(0)}</div>
       <div>:</div>
-      <div className={classes.timeBox}>{numPad(state.minutes)}</div>
+      <div className={classes.timeBox}>{numPad(states.minutes)}</div>
       <div>:</div>
-      <div className={classes.timeBox}>{numPad(state.seconds)}</div>
+      <div className={classes.timeBox}>{numPad(states.seconds)}</div>
     </div>
   );
 };

@@ -4,42 +4,24 @@ import preset from "jss-preset-default";
 jss.setup(preset());
 
 const style = {
-  members: {
-    margin: "50px",
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-  },
-  member: {
-    display: "flex",
-    flexDirection: "column",
-  },
-  name: {
-    marginTop: "25px",
-    textAlign: "center",
-    color: "white",
-    fontSize: "30px",
-    fontWeight: "bold",
-  },
-  image: {
-    width: "400px",
-  },
-  comment: {
+  contentString: {
+    fontSize: "50px",
     marginTop: "30px",
-    width: "90%",
-    minHeight: "500px",
+    marginLeft: "15px",
     color: "white",
-    fontSize: "20px",
   },
-  quotes: {
-    width: "30px",
+  red: {
+    background: "red",
   },
-  rightQuote: {
-    color: "red",
-    marginLeft: "370px",
+  container: {
+    marginTop: "120px",
   },
-  say: {
-    width: "380px",
+  jjal: {
+    marginTop: "70px",
+    position: "relative",
+    left: "30%",
+    width: "45%",
+    height: "25%",
   },
 };
 
