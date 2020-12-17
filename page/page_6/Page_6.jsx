@@ -15,7 +15,7 @@ const Page = () => {
 
     return (
         <div>
-            <div className={commonClasses.titleBox}>
+            <div className={`${commonClasses.titleBox} ${classes.titleEvent}`}>
                 <span className={commonClasses.titleNumber}>04</span>
                 <span className={commonClasses.title}>우리가 직면한 문제</span>
             </div>

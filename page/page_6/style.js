@@ -1,9 +1,15 @@
 import jss from "jss";
 import preset from "jss-preset-default";
+import animation from "../common/animation";
 
 jss.setup(preset());
 
 const style = {
+  "@keyframes hinge": animation.hinge,
+    titleEvent:{
+        animationName: "$hinge",
+        animationDuration: "3s",
+    },
     leftImage: {
         position: "absolute",
         marginTop: "100px",
