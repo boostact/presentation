@@ -62,25 +62,47 @@ const animation = {
       transform: "scale3d(1,1,1)",
     },
   },
-  lightSpeedIn:{
-    "0%":{
+  lightSpeedIn: {
+    "0%": {
       transform: "translate3d(100%, 0, 0) skewX(-30deg)",
       opacity: 0,
     },
-    "60%":{
+    "60%": {
       transform: "skewX(20deg)",
-      opacity: 1
+      opacity: 1,
     },
-    "80%" : {
+    "80%": {
       transform: "skewX(-5deg)",
-      opacity: 1
+      opacity: 1,
     },
-    "100%" : {
+    "100%": {
       transform: "none",
-      opacity: 1
-    }
-  }
-  
+      opacity: 1,
+    },
+  },
+  ttiyong: {
+    "0%": {
+      transform: "scale3d(1, 1, 1)",
+    },
+    "30%": {
+      transform: "scale3d(1.1, .9, 1)",
+    },
+    "40%": {
+      transform: "scale3d(0.9, 1.1, 1)",
+    },
+    "50%": {
+      transform: "scale3d(1.05, .95, 1)",
+    },
+    "65%": {
+      transform: "scale3d(.97, 1.03, 1)",
+    },
+    "75%": {
+      transform: "scale3d(1.02, .98, 1)",
+    },
+    "100%": {
+      transform: "scale3d(1, 1, 1)",
+    },
+  },
 };
 
 // const { animation } = jss.createStyleSheet(style).attach();
