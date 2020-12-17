@@ -1,6 +1,6 @@
 import { Boostact } from "boostact";
-import commonClasses from "../common/style";
 import classes from "./style";
+import commonClasses from "../common/style";
 
 /**@jsx Boostact.createElement */
 
@@ -8,91 +8,22 @@ const Page = () => {
   return (
     <div>
       <div className={commonClasses.titleBox}>
-        <span className={commonClasses.titleNumber}>08</span>
-        <span className={commonClasses.title}>팀원 소개</span>
+        <span className={commonClasses.titleNumber}>07</span>
+        <span className={commonClasses.title}>
+          자동차를 만든다고 운전을 잘하는것은 아니다
+        </span>
       </div>
-      <div className={classes.members}>
-        <div className={classes.member}>
-          <img
-            className={classes.image}
-            src="https://ca.slack-edge.com/T019JFET9H7-U019GCE51F0-57de563ea718-512"
-          ></img>
-          <span className={classes.name}>J001 강경수</span>
-          <div className={classes.comment}>
-            <img
-              className={classes.quotes}
-              src="https://www.flaticon.com/svg/static/icons/svg/2087/2087863.svg"
-            />
-            <p className={classes.say}>
-              Jingle bells, jingle bells Jingle all the way Oh, what fun it is
-              to ride In a one horse open sleigh
-            </p>
-            <img
-              className={classes.quotes + " " + classes.rightQuote}
-              src="https://www.flaticon.com/svg/static/icons/svg/56/56826.svg"
-            />
-          </div>
+      <div className={classes.container}>
+        <span className={`${classes.contentString} ${classes.red}`}>
+          개구리를 해부하는것보다 만드는게 더 이해하기 좋다
+        </span>
+        <div className={`${classes.contentString}`}>
+          자동차를 만든다고 무조건 운전을 잘하는건 아니다
         </div>
-        <div className={classes.member}>
-          <img
-            className={classes.image}
-            src="https://ca.slack-edge.com/T019JFET9H7-U019P4MNBDG-2061fd3b0b86-512"
-          />
-          <span className={classes.name}>J013 구승효</span>
-          <div className={classes.comment}>
-            <img
-              className={classes.quotes}
-              src="https://www.flaticon.com/svg/static/icons/svg/2087/2087863.svg"
-            />
-            <p className={classes.say}>만나서 즐거웠고 다음에 또 봅시다.</p>
-            <img
-              className={classes.quotes + " " + classes.rightQuote}
-              src="https://www.flaticon.com/svg/static/icons/svg/56/56826.svg"
-            />
-          </div>
-        </div>
-        <div className={classes.member}>
-          <img
-            className={classes.image}
-            src="https://ca.slack-edge.com/T019JFET9H7-U019P4TTH0S-d4419727615f-512"
-          />
-          <span className={classes.name}>J107 심재익</span>
-          <div className={classes.comment}>
-            <img
-              className={classes.quotes}
-              src="https://www.flaticon.com/svg/static/icons/svg/2087/2087863.svg"
-            />
-            <p className={classes.say}>
-              Jingle bells, jingle bells Jingle all the way Oh, what fun it is
-              to ride In a one horse open sleigh
-            </p>
-            <img
-              className={classes.quotes + " " + classes.rightQuote}
-              src="https://www.flaticon.com/svg/static/icons/svg/56/56826.svg"
-            />
-          </div>
-        </div>
-        <div className={classes.member}>
-          <img
-            className={classes.image}
-            src="https://ca.slack-edge.com/T019JFET9H7-U01A1RGS0N5-e5bf7d446994-512"
-          ></img>
-          <span className={classes.name}>J200 지화영</span>
-          <div className={classes.comment}>
-            <img
-              className={classes.quotes}
-              src="https://www.flaticon.com/svg/static/icons/svg/2087/2087863.svg"
-            />
-            <p className={classes.say}>
-              Hey, jingle bells, jingle bells Jingle all the way Oh, what fun it
-              is to ride In a one horse open sleigh
-            </p>
-            <img
-              className={classes.quotes + " " + classes.rightQuote}
-              src="https://www.flaticon.com/svg/static/icons/svg/56/56826.svg"
-            />
-          </div>
-        </div>
+        <img
+          className={classes.jjal}
+          src="https://user-images.githubusercontent.com/33454557/102347707-1efe2e80-3fe4-11eb-97e7-3666c8f805f6.gif"
+        ></img>
       </div>
     </div>
   );
