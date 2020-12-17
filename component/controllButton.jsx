@@ -38,6 +38,8 @@ const ControllButton = () => {
     if (index === pageList.length - 1) {
         frontLink = "/" + pageList[index];
     }
+    console.log(prevLink);
+    console.log(frontLink);
 
     const down = () => {
         const idx = pageList.indexOf(states.list);

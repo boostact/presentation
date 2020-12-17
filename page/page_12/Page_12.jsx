@@ -8,7 +8,6 @@ const Page = () => {
     const checkString = (e) => {
         setString(e.target.value);
     };
-    console.log(string);
     return (
         <div>
             <div className={commonClasses.titleBox}>
