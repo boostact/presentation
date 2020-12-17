@@ -5,6 +5,7 @@ import { Context } from "../Main";
 /** @jsx Boostact.createElement */
 
 const pageList = [
+    "/",
     "page_1",
     "page_2",
     "page_3",
@@ -30,16 +31,17 @@ const ControllButton = () => {
     if (index < 0) {
         index = 0;
     }
-    let prevLink = "/" + pageList[index - 1];
-    let frontLink = "/" + pageList[index + 1];
-    if (index < 0) {
-        prevLink = "/";
-    }
-    if (index === pageList.length - 1) {
-        frontLink = "/" + pageList[index];
-    }
-    console.log(prevLink);
-    console.log(frontLink);
+    let prevLink =
+        pageList[(index - 1 + listLength) % listLength] === "/"
+            ? "/"
+            : "/" + pageList[(index - 1 + listLength) % listLength];
+    let frontLink =
+        pageList[(index + 1 + listLength) % listLength] === "/"
+            ? "/"
+            : "/" + pageList[(index + 1 + listLength) % listLength];
+
+    console.log("이전 장", prevLink);
+    console.log("다음 장", frontLink);
 
     const down = () => {
         const idx = pageList.indexOf(states.list);
