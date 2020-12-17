@@ -5,9 +5,9 @@ jss.setup(preset());
 
 const style = {
   contentString: {
-    fontSize: "50px",
+    fontSize: "30px",
     marginTop: "30px",
-    marginLeft: "15px",
+    marginLeft: "50px",
     color: "white",
   },
   red: {
@@ -18,10 +18,10 @@ const style = {
   },
   jjal: {
     marginTop: "70px",
-    position: "relative",
-    left: "30%",
+    position: "fixed",
+    left: "50%",
     width: "45%",
-    height: "25%",
+    height: "45%",
   },
 };
 
