@@ -4,7 +4,13 @@ import preset from "jss-preset-default";
 jss.setup(preset());
 
 const style = {
-  todoPanel: { width: "90%", margin: "auto", marginTop: "5rem", border: "1px solid #F2F2F2", borderRadius: "10px" },
+  todoPanel: {
+    width: "90%",
+    margin: "auto",
+    marginTop: "5rem",
+    border: "1px solid #F2F2F2",
+    borderRadius: "10px",
+  },
   todoHeader: {
     backgroundColor: "#424857",
     margin: "0px",
@@ -32,7 +38,15 @@ const style = {
   todoList: { minHeight: "0rem" },
   checkedName: { flex: 1, textDecoration: "line-through" },
   notCheckedName: { flex: 1 },
-  TodoListItem: { display: "flex", height: "2rem", alignItems: "center", padding: "0px", border: "1px solid #F2F2F2" },
+  TodoListItem: {
+    display: "flex",
+    paddingLeft: "5px",
+    color: "white",
+    height: "2rem",
+    alignItems: "center",
+    padding: "0px",
+    border: "1px solid #F2F2F2",
+  },
   remove: {
     width: "10%",
     height: "100%",
@@ -40,7 +54,7 @@ const style = {
     margin: "0px",
     backgroundColor: "#ffe564",
     display: "flex",
-    color: "white",
+    color: "black",
     cursor: "pointer",
     alignItems: "center",
     justifyContent: "center",
@@ -49,7 +63,7 @@ const style = {
     width: "10%",
     backgroundColor: "#ffe564",
     border: "none",
-    color: "white",
+    color: "black",
     cursor: "pointer",
   },
 };

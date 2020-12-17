@@ -43,10 +43,23 @@ const animation = {
   },
   expanse: {
     "0%": {
-      transfrom: "scale3d(1,1,1)",
+      transfrom: "scale(1)",
+    },
+    "50%": {
+      transform: "scale(2)",
+      transformOrigin: "50% 100%",
     },
     "100%": {
+      transform: "scale(2)",
+      transformOrigin: "50% 100%",
+    },
+  },
+  reduce: {
+    "0%": {
       transform: "scale3d(3,3,3)",
+    },
+    "100%": {
+      transform: "scale3d(1,1,1)",
     },
   },
 };
