@@ -24,7 +24,8 @@ const Page = () => {
               src="https://www.flaticon.com/svg/static/icons/svg/2087/2087863.svg"
             />
             <p className={classes.say}>
-              JavaScript 생태계에 뛰어들고 싶은 개발자
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JavaScript 생태계에 뛰어들고 싶은
+              개발자
             </p>
             <img
               className={classes.quotes + " " + classes.rightQuote}
