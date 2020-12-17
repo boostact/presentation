@@ -20,7 +20,7 @@ const style = {
     animationName: "$fadein",
     animationDuration: "1.5s",
     marginTop: "180px",
-    marginLeft: "200px",
+    marginLeft: "150px",
   },
   textContent: {
     fontSize: "45px",

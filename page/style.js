@@ -32,7 +32,7 @@ const style = {
     fontSize: "40px",
     fontWeight: "900",
     position: "fixed",
-    right: "36%",
+    right: "38%",
     top: "65%",
   },
 };
