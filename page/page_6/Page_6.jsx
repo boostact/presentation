@@ -16,8 +16,8 @@ const Page = () => {
     return (
         <div>
             <div className={commonClasses.titleBox}>
-                <span className={commonClasses.titleNumber}>03</span>
-                <span className={commonClasses.title}>부스트액트의 조건</span>
+                <span className={commonClasses.titleNumber}>04</span>
+                <span className={commonClasses.title}>우리가 직면한 문제</span>
             </div>
             <div className={classes.leftImage}>
                 <img

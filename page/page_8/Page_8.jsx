@@ -8,7 +8,7 @@ hljs.registerLanguage("javascript", javascript);
 /**@jsx Boostact.createElement */
 
 const string1 = marked(`
-# 님, 지금 "삭제" 영어로 써보실래요?
+# 지금 "삭제" 영어로 써보실래요?
 `);
 
 const highlight1 = hljs.highlight(

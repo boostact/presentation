@@ -11,8 +11,8 @@ const styleSheet = {
     topOfTimer: {
         width: "400px",
         borderBottom: "50px solid black",
-        borderRight: "50px solid #41404a",
-        borderLeft: "50px solid #41404a",
+        borderRight: "50px solid transparent",
+        borderLeft: "50px solid transparent",
     },
     bigBox: {
         display: "flex",
