@@ -27,7 +27,7 @@ const style = {
     fontSize: "40px",
     fontWeight: "900",
     position: "fixed",
-    right: "38%",
+    right: "36%",
     top: "65%",
   },
 };

@@ -34,12 +34,16 @@ const ControllButton = () => {
   if (index < 0) {
     prevLink = "/";
   }
-  if (index === pageList.length - 1) {
+  if (index === listLength - 1) {
     frontLink = "/" + pageList[index];
   }
 
   const down = () => {
     const idx = pageList.indexOf(states.list);
+    if (idx === 0) {
+      prevLink = "/page_1";
+      actions.setList(pageList[0]);
+    }
     actions.setList(pageList[(idx - 1) % listLength]);
   };
 
@@ -47,7 +51,7 @@ const ControllButton = () => {
     const idx = pageList.indexOf(states.list);
     if (idx === listLength - 2 && !states.QnA) {
       actions.setQnA(pageList[idx + 1]);
-    } else {
+    } else if (idx < listLength - 2) {
       actions.setList(pageList[(idx + 1) % listLength]);
     }
   };
