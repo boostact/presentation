@@ -6,27 +6,32 @@ jss.setup(preset());
 
 const style = {
   "@keyframes expanse": animation.expanse,
+  "@keyframes fadeout": animation.fadeOut,
   page3: {
     minHeight: "100%",
     width: "100%",
   },
   imageBox: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     textAlign: "center",
     height: "100%",
     paddingTop: "0px",
   },
   treeImage: {
-    animationName: "$expanse",
-    animationDuration: "10s",
     width: "50%",
     bottom: "0px",
+  },
+  treeAnimation: {
+    animationName: "$expanse",
+    animationDuration: "20s",
   },
   framework: {
     position: "absolute",
     fontSize: "250px",
     color: "#61dafb",
-    top: "calc(50% - 125px)",
-    marginLeft: "17.5%",
+    //top: "calc(50% - 125px)",
     zIndex: "4",
     fontWeight: "900",
   },
