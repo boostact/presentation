@@ -5,6 +5,7 @@ import { Context } from "../Main";
 /** @jsx Boostact.createElement */
 
 const pageList = [
+  "/",
   "page_1",
   "page_2",
   "page_3",
@@ -27,9 +28,7 @@ const ControllButton = () => {
   const { states, actions } = Boostact.useContext(Context);
 
   let index = pageList.indexOf(states.list);
-  if (index < 0) {
-    index = 0;
-  }
+
   let prevLink = "/" + pageList[index - 1];
   let frontLink = "/" + pageList[index + 1];
   if (index < 0) {

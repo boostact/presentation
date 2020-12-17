@@ -12,27 +12,9 @@ const numPad = (num) => {
 
 const Timer = () => {
     const startTime = new Date();
-
-    const [hours, setHours] = Boostact.useState(numPad(startTime.getHours()));
-    const [minutes, setMinutes] = Boostact.useState(
-        numPad(startTime.getMinutes())
-    );
-    const [seconds, setSeconds] = Boostact.useState(
-        numPad(startTime.getSeconds())
-    );
-
-    Boostact.useEffect(() => {
-        const intervalId = setInterval(() => {
-            const timer = new Date();
-            setSeconds(numPad(timer.getSeconds()));
-            setMinutes(numPad(timer.getMinutes()));
-            setHours(numPad(timer.getHours()));
-        }, 100);
-
-        return () => {
-            clearInterval(intervalId);
-        };
-    }, [seconds, minutes, hours]);
+    const hours = startTime.getHours();
+    const minutes = numPad(startTime.getMinutes());
+    const seconds = numPad(startTime.getSeconds());
 
     return (
         <div>
