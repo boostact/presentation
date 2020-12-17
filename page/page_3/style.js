@@ -17,7 +17,7 @@ const style = {
   },
   treeImage: {
     animationName: "$expanse",
-    animationDuration: "5s",
+    animationDuration: "10s",
     width: "50%",
     bottom: "0px",
   },
