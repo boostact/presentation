@@ -8,7 +8,7 @@ const Page = () => {
   return (
     <div>
       <div className={commonClasses.titleBox}>
-        <span className={commonClasses.titleNumber}>07</span>
+        <span className={commonClasses.titleNumber}>06</span>
         <span className={commonClasses.title}>
           자동차를 만든다고 운전을 잘하는것은 아니다
         </span>

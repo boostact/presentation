@@ -8,11 +8,14 @@ const Page = () => {
   return (
     <div>
       <div className={commonClasses.titleBox}>
-        <span className={commonClasses.titleNumber}>09</span>
+        <span className={commonClasses.titleNumber}>08</span>
         <span className={commonClasses.title}>Q & A</span>
       </div>
       <div>
-          <img className={classes.babyImage} src="https://user-images.githubusercontent.com/33454557/102326902-53fc8800-3fc8-11eb-9155-412cc8cf12de.png"></img>
+        <img
+          className={classes.babyImage}
+          src="https://user-images.githubusercontent.com/33454557/102326902-53fc8800-3fc8-11eb-9155-412cc8cf12de.png"
+        ></img>
       </div>
     </div>
   );
