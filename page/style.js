@@ -1,9 +1,11 @@
 import jss from "jss";
 import preset from "jss-preset-default";
+import animation from "./common/animation";
 
 jss.setup(preset());
 
 const style = {
+  "@keyframes tada": animation.tada,
   button: {
     position: "fixed",
     height: "236px",
@@ -15,6 +17,9 @@ const style = {
         'url("https://s3.us-west-2.amazonaws.com/secure.notion-static.com/92856572-78c6-4439-8fa0-9ee85992753d/blueButton.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20201216%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201216T140005Z&X-Amz-Expires=86400&X-Amz-Signature=1d398bed1999a8a2b5f9c2a7c0aa5c3fac184136c2847c7c788ccc64e754764e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22blueButton.png%22")',
     },
     "&:hover": {
+      animationName: "$tada",
+      animationDuration: "1s",
+      animationIterationCount: "infinite",
       cursor: "pointer",
       background: {
         image:

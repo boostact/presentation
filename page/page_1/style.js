@@ -4,7 +4,13 @@ import preset from "jss-preset-default";
 jss.setup(preset());
 
 const style = {
+  "@keyframes hellotitle": {
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+  },
   bannerImage: {
+    animationDuration: "3s",
+    animationName: "$hellotitle",
     display: "block",
     width: "90%",
     marginLeft: "auto",

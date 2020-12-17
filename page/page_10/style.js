@@ -1,12 +1,14 @@
 import jss from "jss";
 import preset from "jss-preset-default";
+import animation from "../common/animation";
 
 jss.setup(preset());
 
 const style = {
+  "@keyframes fadein": animation.fadeIn,
   bodyContainer: {
-    display: 'flex',
-    flexDirection: 'row'
+    display: "flex",
+    flexDirection: "row",
   },
   jjal: {
     marginTop: "70px",
@@ -15,15 +17,17 @@ const style = {
     width: "40%",
     height: "40%",
   },
-  textContainer:{
+  textContainer: {
+    animationName: "$fadein",
+    animationDuration: "1.5s",
     marginTop: "180px",
-    marginLeft: "200px"
+    marginLeft: "200px",
   },
-  textContent:{
+  textContent: {
     fontSize: "45px",
-    marginTop:"30px",
-    color:"white"
-  }
+    marginTop: "30px",
+    color: "white",
+  },
 };
 
 const { classes } = jss.createStyleSheet(style).attach();
