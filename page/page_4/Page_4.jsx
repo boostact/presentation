@@ -15,7 +15,7 @@ const Page = () => {
             </div>
 
             <div className={classes.JSTree}>
-                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FYu4WN%2FbtqQnY55cfp%2F6vwEkjrtqfjxGKB4SGGn4k%2Fimg.png"></img>
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FyMbjN%2FbtqQDEZWyXD%2FZMmpeoykAUKKMn8uASotF1%2Fimg.png"></img>
             </div>
         </div>
     );
