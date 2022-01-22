@@ -7,7 +7,7 @@ hljs.registerLanguage("javascript", javascript);
 
 /**@jsx Boostact.createElement */
 
-const string1 = marked(`
+const string1 = marked.parse(`
 # 지금 "삭제" 영어로 써보실래요?
 `);
 
@@ -47,7 +47,7 @@ const determineState = (curChild, vChild) => {
   `
 ).value;
 
-const string2 = marked(`
+const string2 = marked.parse(`
 # babel은 optional chaining 몰라요.
 `);
 
